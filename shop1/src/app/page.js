@@ -7,12 +7,15 @@ const Home = ({ products, bannerData }) => {
   return (
     <div>
       <HeroBanner />
+      {console.log(bannerData)}
       <div className="products-heading">
         <h2>Beset Selliing Products</h2>
         <p>Speakers of many variations</p>
       </div>
       <div className="products-container">
-        {products?.map((product) => product)}
+        {products?.map((product) => {
+          // console.log(product);
+        })}
       </div>
       <FooterBanner />
     </div>
