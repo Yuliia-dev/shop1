@@ -1,12 +1,11 @@
 import React from "react";
 
-import { Product, FooterBanner, HeroBanner } from "./components";
 import { client } from "../../lib/client";
 
 const Home = ({ products, bannerData }) => {
   return (
     <div>
-      <HeroBanner />
+      HeroBanner
       {console.log(bannerData)}
       <div className="products-heading">
         <h2>Beset Selliing Products</h2>
@@ -17,7 +16,7 @@ const Home = ({ products, bannerData }) => {
           // console.log(product);
         })}
       </div>
-      <FooterBanner />
+      FooterBanner
     </div>
   );
 };
